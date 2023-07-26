@@ -244,6 +244,13 @@ input[type=checkbox] {
   border-style: hidden;
   border-radius: 5px;
 }
+.contact__button{
+  text-align: center;
+   text-decoration: none; 
+   color: white; 
+   background-color: #d8a41f;
+   border: none;
+}
 
 .skills {
   background-color: #24283d;
