@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <title>Rohan Jadwani</title>
+
+    <script>
+        function closeMenu() {
+            var x = document.getElementById("checkbox_toggle");
+
+            // Delay the unchecking of the checkbox and menu closure by 10 seconds (10000 milliseconds)
+            setTimeout(function () {
+                x.checked = false; // Uncheck the checkbox, which will close the mobile menu
+            }, 500);
+        }
+    </script>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="navbar__brand">
+            <img src="portfolio_img.jpg" alt="portfolio_img" srcset="" class="portfolio__image">
+        </div>
+
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+
+                <li>
+                    <a href="#skills" onclick="closeMenu()">Skills</a>
+                </li>
+
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+                <!-- <li><a href="/">Contact</a></li> -->
+            </div>
+        </ul>
+    </nav>
+    <section class="#home" id="home">
+        <div class="container w3-container w3-center w3-animate-top">
+
+
+            <div class="personal_image">
+                <img src="IMG_20230721_180035.jpg" alt="" srcset="" class="personal__image">
+            </div>
+            <div class="bio__text">
+                <h1 class="bio__name">
+                    Rohan Jadwani
+                </h1>
+                <h2 class="bio__detail">A Creative Front End Developer</h2>
+            </div>
+            <div class="home__button">
+                <a href="mailto:rohanjadvani29@gmail.com" class="hire__button">Hire Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about__container">
+            <div class="about__img">
+                <img src="FF1A4298.JPG" alt="" class="professional__img">
+                <!-- <div class="about__box"></div>/ -->
+            </div>
+            <div class="about__text">
+                <h3 class="about__discovery">Discover</h3>
+                <div id="box">
+                    <h1 style=" display: inline; ">
+                        <span style="border-bottom: 2px solid #fdd05a; padding-bottom: 7px;">Ab</span>out Me
+                    </h1>
+                </div>
+                <div class="about__intro">
+                    Hi, I'm Rohan Jadwani, a web developer. I have a passion
+                    for designing
+                    and building
+                    web applications that are both visually and applealing and functional.
+                    I specialize in front-end development, using my skills in HTML,CSS and JavaScript to create
+                    responsive and dynamic
+                    web pages.
+                    Also I'm currently exploring new
+                    technologies like Php, Mysql.
+                    <p>
+                        In addition to my technical skills, I'm enthusiast about learning new technologies.
+                        Whenever
+                        I'm not coding, you can find me listening music, listening podcast or playing an outdoor game,
+                        and I'm always
+                        looking for new
+                        ways to
+                        challenge myself and grow as a developer.
+                    </p>
+                </div>
+                <div class="resume__button">
+                    <!-- <button type="submit" class="download__button">
+                        <a href="rohan_resume.pdf" style="text-decoration: none; color: white;">Download Resume</a></button> -->
+                        <a class="download__button" href="rohan_resume.pdf"><button style=""  class="contact__button">Download Resume</button></a>
+                </div>
+
+            </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="skills__text">
+            <h1 class="skill__text__my">My Awesome Skills</h1>
+            <h2 class="my__skills">My skills</h2>
+        </div>
+        <div class="main__skill__bar">
+            <div class="skill_bar">
+                <div class="progress-bar"> 
+                    <div class="progress" style="width: 95%;">HTML: 95%</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;">CSS: 80%</div>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%; ">JAVASCRIPT: 60%</div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;">PHP: 60%</div>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;">MySQL: 80%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact__text">
+            <h2 class="contact__text__highlight">Get in touch.</h2>
+            <h1 class="contact__text__contact">CONTACT</h1>
+        </div>
+
+        <div class="contact__ways">
+            <div class="contact__email"><i class='far fa-envelope' style='color: white'></i> rohanjadvani29@gmail.com
+            </div>
+            <div class="contact__number"><i class='fa fa-phone' style='color: white'></i> +917405007246</div>
+            <div class="contact__address"><i class='fas fa-map-marker-alt' style='color: white'></i> Gujarat, India.
+            </div>
+        </div>
+
+
+        <div class="contact__icons">
+            <a href="https://www.linkedin.com/in/rohan-jadwani29"><i class='fab fa-linkedin' style='color: white'
+                    id="icon1"></i></a>
+            <a href="https://github.com/rohan-jadwani"><i class='fab fa-github' style='color: white' id="icon2"></i></a>
+            <a href="https://instagram.com/rohan_jadwani?igshid=MzNINGkZWQMg=="><i class='fab fa-instagram'
+                    style='color: white' id="icon3"></i></a>
+        </div>
+
+        <div class="page__rights">
+            Created By <a href="#home"
+                style="color: #fdd05a; text-decoration: none;">Rohan Jadwani</a>
+        </div>
+    </section>
+
+    
+</body>
+
+</html>
